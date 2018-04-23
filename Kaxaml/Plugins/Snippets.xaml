@@ -33,7 +33,7 @@
     </ResourceDictionary>
   </UserControl.Resources>
 
-  <Grid MinHeight="15" Margin="0,5" Background="Transparent" Name="MainGrid" Loaded="GridLoaded" >
+  <Grid x:Name="MainGrid" MinHeight="15" Margin="0,5" Background="Transparent"  Loaded="GridLoaded" >
 
     <Grid.ContextMenu>
       <ContextMenu>

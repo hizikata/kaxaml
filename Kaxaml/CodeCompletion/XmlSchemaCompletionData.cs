@@ -429,7 +429,6 @@ namespace Kaxaml.CodeCompletion
             {
                 schema = XmlSchema.Read(reader, new ValidationEventHandler(SchemaValidation));
                 schema.Compile(new ValidationEventHandler(SchemaValidation));
-
                 namespaceUri = schema.TargetNamespace;
             }
             finally

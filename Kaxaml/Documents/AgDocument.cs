@@ -6,7 +6,7 @@ namespace Kaxaml.Documents
     class AgDocument : XamlDocument
     {
 
-        #region燙onstructors
+        #region Constructors
 
         public AgDocument(string folder, string sourceText)
             : base(folder)
@@ -22,11 +22,11 @@ namespace Kaxaml.Documents
             InitializeSourceText(Settings.Default.AgDefaultXaml);
         }
 
-        #endregion燙onstructors
+        #endregion Constructors
 
-        #region燬tatic燤ethods
-
-        public static AgDocument FromFile(string fullPath)
+        #region Static Methods
+        //隐藏基类成员
+        public new static AgDocument FromFile(string fullPath)
         {
             if (File.Exists(fullPath))
             {
@@ -41,7 +41,7 @@ namespace Kaxaml.Documents
             return null;
         }
 
-        #endregion燬tatic燤ethods
+        #endregion Static Methods
 
     }
 }
